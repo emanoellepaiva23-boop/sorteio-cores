@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 USUARIAS_VALIDAS = [
     "Inglidh", "Maiury", "Katia",
-    "Amabily", "Jaqueline", "Emanoelle", "Ariely"
+    "Amabily", "Jaqueline", "Emanoelle", "Arielly"
 ]
 
 CORES_INICIAIS = [
@@ -47,5 +47,6 @@ def index():
             mensagem = f"{nome}, a sua cor é a {cor}"
 
     return render_template("index.html", mensagem=mensagem)
+
 
 app.run(host="0.0.0.0", port=10000)
