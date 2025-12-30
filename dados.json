@@ -1,6 +1,6 @@
 {
   "sorteios": {},
-  "cores_restantes": [
+  "cores_iniciais": [
     "Azul",
     "Amarelo",
     "Vermelho",
@@ -10,3 +10,4 @@
     "Verde"
   ]
 }
+
