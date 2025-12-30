@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio de Cores</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 40px;">
+
+    <h2>Sorteio de Cores</h2>
+
+    <form method="post">
+
+        <input
+            type="text"
+            name="nome"
+            required
+            placeholder="Digite seu primeiro nome"
+            style="font-size:16px; padding:10px; width:100%; max-width:300px;"
+        >
+
+        <br><br>
+
+        <button type="submit" style="font-size:16px; padding:10px 20px;">
+            Sortear
+        </button>
+
+    </form>
+
+    {% if mensagem %}
+        <p style="color:red;">{{ mensagem }}</p>
+    {% endif %}
+
+    {% if cor %}
+        <p style="font-size:18px;">
+            {{ nome }}, a sua cor é a <strong>{{ cor }}</strong>
+        </p>
+    {% endif %}
+
+</body>
+</html>
